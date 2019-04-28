@@ -34,9 +34,8 @@ var SpinToy = function (config) {
 };
 
 // return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = SpinToy;
-}
+if (typeof define != 'undefined') define([], function () { return SpinToy });
+if (typeof module != 'undefined') module.exports = SpinToy;
 
 // extend the class
 SpinToy.prototype.Main = function(config, context) {

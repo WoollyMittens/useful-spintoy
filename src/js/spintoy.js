@@ -34,5 +34,5 @@ var SpinToy = function (config) {
 };
 
 // return as a require.js module
-if (typeof define != 'undefined') define(['spintoy'], function () { return SpinToy });
+if (typeof define != 'undefined') define([], function () { return SpinToy });
 if (typeof module != 'undefined') module.exports = SpinToy;
